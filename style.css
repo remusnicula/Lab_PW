@@ -7,6 +7,10 @@ font-family: "Lucida Console", "Courier New", monospace;
 margin: 0 auto
 
  }
+ .dark-mode {
+  background-color: black;
+  color: white;
+}
  
  :root {
 --main-white: #f0f0f0;

@@ -1,19 +1,16 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   
     <head meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <script src="contact_form.js">
   
-  </script>
-
-  </script>
-            unitbvsasda
-           
-    </head>
+  <h2>unitbvsasda</h2> 
+  <p id="p1">AAAAAAAAAAAAAAAAA</p>
+  </head>
 <body>
+
   <script>
- alert("  Hello World!");
+ console.log("  Hello World!");
 </script> 
  
  <nav id="menu">
@@ -46,22 +43,27 @@
  <footer> 
   <form>
     
-    <label for="slop">Tell us your story:</label>
-<input type="text" id="name" name="name" required>
+    <label for="name">Tell us your name:</label>
+<input type="text" id="name" name="name" minlength="2" required>
  
-<label for="story">Tell us your story:</label>
+<label for="email">Tell us your email:</label>
 <input type="email" id="email" name="email"  >
  
-<label for="story">Tell us your story:</label>
+<label for="story">Tell us your MESSAGE:</label>
 
-<textarea id="story" name="story" rows="1" cols="3">
- <script src=”js/contact_form.js”></script>
+<textarea id="story" name="story" rows="1" minlength="10" cols="3">
 </textarea>
- <button onclick="submitForm()" input type="submit" value="Send Request"  >
+ <button onclick="submitForm()" input type="button" value="Send Request"  >
+     
   </form>
    </footer>
- 
+   <p id="p2"> </p>
 
 </section>
+
+<script src="contact_form.js"></script>
+<button onclick="myFunction()">Toggle dark mode</button>
 </body>
+
+</html>
 
