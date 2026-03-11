@@ -38,5 +38,23 @@ function myFunction() {
   element.classList.toggle("dark-mode");
 }
 
+function ShowAndHide() {
+    var x = document.getElementById('SectionName');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+function education(){
+  const educatie1 = document.getElementById("ed1").value;
+  const educatie2 = document.getElementById("ed2").value;
+  const educatie3 = document.getElementById("ed3").value;
+  const values = new Array(educatie1,educatie2,educatie3);
+  console.log(values);
+
+}
+education();
 sss();
  
