@@ -1,19 +1,22 @@
 import Card from './Card';
+import './App.css';
+import QuickNote from './QuickNote';
+import TodoList from './TodoList';
+import ContactForm from './ContactForm';
+import Clock from './Clock';
+import ProjectList from './ProjectList';
+
 function App() {
-  const projects = [
- { title: "Proiect 1", description: "Pagina personala" },
- { title: "Proiect 2", description: "Calculator buget" },
- { title: "Proiect 3", description: "Dashboard React" },
- { title: "Proiect 4", description: "you spelt it wrong  " },
-];
- return (
- <div>
- <h1>Dashboard</h1>
- 
-{projects.map(function(item, index) {
- return <Card key={index} title={item.title} description={item.description} />;
-})}
- </div>
- );
+  return (
+    <div className="wingdings-text">
+      <Clock />
+      <QuickNote />
+      <TodoList />
+      <ContactForm />
+      <h1>Dashboard</h1>
+      <ProjectList />
+    </div>
+  );
 }
+
 export default App;
