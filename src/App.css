@@ -10,6 +10,18 @@
     
      font-family: "Wingdings",     "Zapf Dingbats", "Symbol", sans-serif;
    }*/ 
-
  
-   
+   nav {
+ display: flex;
+ gap: 15px;
+ padding: 15px;
+ 
+}  
+  nav a {
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+ padding: 8px 16px;
+ border-radius: 6px;
+}
+nav a:hover { background: #030a18; }
+nav a.active { background: #5a514d; }  
