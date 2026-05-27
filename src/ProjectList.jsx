@@ -33,7 +33,12 @@ function ProjectList() {
     setEditTech('');
   }
 
-
+async function handleDelete(id) {
+  await fetch('http://localhost:3000/api/projects/' + id, {
+    method: 'DELETE',
+  });
+  setProjects(projects.filter(p => p._id !== id));
+}
   async function handleSave(id) {
     const response = await fetch('http://localhost:3000/api/projects/' + id, {
       method: 'PUT',
@@ -90,11 +95,19 @@ function ProjectList() {
                   onChange={(e) => setEditTech(e.target.value)} 
                 />
               </div>
+              <button onClick={() => startEditing(project)} style={{ marginTop: '5px' }}>
+                   editeaza
+                        </button>
+                          <button onClick={() => handleDelete(project._id)} style={{ marginLeft: '5px' }}>
+                            sterge
+                        </button>
               <div style={{ marginTop: '10px' }}>
                 <button onClick={() => handleSave(project._id)}>Salvează</button>
                 <button onClick={cancelEditing} style={{ marginLeft: '5px' }}>Anulează</button>
               </div>
             </div>
+
+            
           );
         }
 
